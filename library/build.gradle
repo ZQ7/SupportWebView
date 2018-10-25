@@ -21,9 +21,13 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    api fileTree(dir: 'libs', include: ['*.jar'])
 
     implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    //api 'com.tencent.sonic:sdk:3.0.0'
+    api 'ren.yale.android:cachewebviewlib:2.0.3'
+
 
 }
 
