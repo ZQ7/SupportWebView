@@ -18,6 +18,7 @@ public class App extends Application {
         WebViewSdk.getInstance()
                 .setDebug(true)
                 .initWebView(this)
-                .builderCache(new WebViewCacheInterceptor.Builder(this));
+                .builderCache(new WebViewCacheInterceptor.Builder(this))
+        ;
     }
 }
