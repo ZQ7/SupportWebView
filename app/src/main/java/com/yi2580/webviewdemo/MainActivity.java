@@ -80,8 +80,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         });
 
-        //webView.loadUrl("file:///android_asset/demo.html");
-        String url = "https://mall.hulusaas.com/article/5ba4dfa47f6fd3005d3e0cd9?resourceId=5ba4dfa47f6fd3005d3e0cd9&resourceType=5&share=1&invite=57f86ae02e958a00557d05d6";
+
+        String url = "file:///android_asset/demo.html";
+        //String url = "https://mall.hulusaas.com/article/5ba4dfa47f6fd3005d3e0cd9?resourceId=5ba4dfa47f6fd3005d3e0cd9&resourceType=5&share=1&invite=57f86ae02e958a00557d05d6";
         //String url = "http://debugx5.qq.com";
         //String url = "http://debugtbs.qq.com";
         webView.loadUrl(url);
@@ -122,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent intent) {
         if (requestCode == RESULT_CODE) {
-            if (null == mUploadMessage){
+            if (null == mUploadMessage) {
                 return;
             }
             Uri result = intent == null || resultCode != RESULT_OK ? null : intent.getData();
